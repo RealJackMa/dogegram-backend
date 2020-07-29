@@ -31,7 +31,7 @@ class Api::V1::ImagesController < ApplicationController
     private 
 
     def image_params
-        params.require(:image).permit(:id, :title, :likes, :url)
+        params.require(:image).permit(:title, :likes, :url)
     end 
 
 end
